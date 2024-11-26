@@ -5,9 +5,6 @@
   font-style: normal;
   background-color: #e9e9e9;
 }
-#green-tea-history .fs-75px {
-  font-size: clamp(24px, 5.859375vw, 75px);
-}
 #green-tea-history .fs-40px {
   line-height: 1.575;
   font-size: clamp(20px, 3.125vw, 40px);
@@ -27,14 +24,8 @@
 #green-tea-history .leading-2 {
   line-height: 2;
 }
-#green-tea-history .tracking-0\.3 {
-  letter-spacing: 0.3em;
-}
 #green-tea-history .fw-medium {
   font-weight: 500;
-}
-#green-tea-history .fw-bold {
-  font-weight: 700;
 }
 #green-tea-history .fw-heavy {
   font-weight: 900;
@@ -48,23 +39,8 @@
 #green-tea-history .text-green {
   color: #00b65d;
 }
-#green-tea-history .text-dark-green {
-  color: #004e31;
-}
-#green-tea-history .text-gray {
-  color: #5d5d5d;
-}
 #green-tea-history .text-center {
   text-align: center;
-}
-#green-tea-history .m-auto {
-  margin: auto;
-}
-#green-tea-history .mt-auto {
-  margin-top: auto;
-}
-#green-tea-history .mt-20px {
-  margin-top: clamp(0px, 1.5625vw, 20px);
 }
 #green-tea-history .mt-36px {
   margin-top: clamp(0px, 2.8125vw, 36px);
@@ -75,16 +51,8 @@
 #green-tea-history .mt-52px {
   margin-top: clamp(0px, 4.0625vw, 52px);
 }
-#green-tea-history .mt-64px {
-  margin-top: clamp(0px, 5vw, 64px);
-}
 #green-tea-history .mt-72px {
   margin-top: clamp(0px, 5.625vw, 72px);
-}
-@media (min-width: 768px) {
-  #green-tea-history .md\:mt-72px {
-    margin-top: clamp(0px, 5.625vw, 72px);
-  }
 }
 #green-tea-history .mt-120px {
   margin-top: clamp(0px, 9.375vw, 120px);
@@ -97,51 +65,12 @@
     padding: clamp(0px, 2.5vw, 32px);
   }
 }
-#green-tea-history .px-36px {
-  padding-left: clamp(0px, 2.8125vw, 36px);
-  padding-right: clamp(0px, 2.8125vw, 36px);
-}
-#green-tea-history .py-60px {
-  padding-top: clamp(0px, 4.6875vw, 60px);
-  padding-bottom: clamp(0px, 4.6875vw, 60px);
-}
-#green-tea-history .py-50px {
-  padding-top: clamp(0px, 3.90625vw, 50px);
-  padding-bottom: clamp(0px, 3.90625vw, 50px);
-}
 #green-tea-history .px-70px {
   padding-left: clamp(0px, 5.46875vw, 70px);
   padding-right: clamp(0px, 5.46875vw, 70px);
 }
-#green-tea-history .w-100 {
-  width: 100%;
-}
-#green-tea-history .rounded {
-  border-radius: clamp(4px, 0.78125vw, 10px);
-}
-#green-tea-history .block {
-  display: block;
-}
-#green-tea-history .d-none {
-  display: none;
-}
 #green-tea-history .flex {
   display: flex;
-}
-@media (min-width: 640px) {
-  #green-tea-history .sm\:block {
-    display: block;
-  }
-}
-@media (min-width: 768px) {
-  #green-tea-history .md\:block {
-    display: block;
-  }
-}
-@media (min-width: 768px) {
-  #green-tea-history .md\:d-none {
-    display: none;
-  }
 }
 #green-tea-history .flex-col {
   flex-direction: column;
@@ -158,41 +87,6 @@
 }
 #green-tea-history .items-center {
   align-items: center;
-}
-#green-tea-history .items-start {
-  align-items: flex-start;
-}
-#green-tea-history .justify-center {
-  justify-content: center;
-}
-#green-tea-history .justify-between {
-  justify-content: space-between;
-}
-@media (min-width: 768px) {
-  #green-tea-history .md\:flex {
-    display: flex;
-  }
-}
-@media (min-width: 640) {
-  #green-tea-history .sm\:items-center {
-    align-items: center;
-  }
-}
-@media (min-width: 768px) {
-  #green-tea-history .md\:items-center {
-    align-items: center;
-  }
-}
-@media (min-width: 768px) {
-  #green-tea-history .md\:justify-center {
-    justify-content: center;
-  }
-}
-#green-tea-history .basis-1\/2 {
-  flex-basis: 50%;
-}
-#green-tea-history .gap-4 {
-  gap: 1rem;
 }
 #green-tea-history .center {
   display: flex;

@@ -11,7 +11,6 @@
 }
 
 $primary-color: #00b65d;
-$primary-color-dark: #004e31;
 $background-color: #e9e9e9;
 $Noto-Sans-TC: "Noto Sans TC", sans-serif;
 
@@ -21,9 +20,7 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     background-color: $background-color;
-    .fs-75px {
-        font-size: clampCalc(75, 24);
-    }
+
     .fs-40px {
         line-height: 1.575;
         font-size: clampCalc(40, 20);
@@ -43,15 +40,11 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
     .leading-2 {
         line-height: 2;
     }
-    .tracking-0\.3 {
-        letter-spacing: 0.3em;
-    }
+
     .fw-medium {
         font-weight: 500;
     }
-    .fw-bold {
-        font-weight: 700;
-    }
+
     .fw-heavy {
         font-weight: 900;
     }
@@ -64,24 +57,10 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
     .text-green {
         color: $primary-color;
     }
-    .text-dark-green {
-        color: $primary-color-dark;
-    }
-    .text-gray {
-        color: #5d5d5d;
-    }
     .text-center {
         text-align: center;
     }
-    .m-auto {
-        margin: auto;
-    }
-    .mt-auto {
-        margin-top: auto;
-    }
-    .mt-20px {
-        margin-top: clampCalc(20, 0);
-    }
+
     .mt-36px {
         margin-top: clampCalc(36, 0);
     }
@@ -91,17 +70,10 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
     .mt-52px {
         margin-top: clampCalc(52, 0);
     }
-    .mt-64px {
-        margin-top: clampCalc(64, 0);
-    }
     .mt-72px {
         margin-top: clampCalc(72, 0);
     }
-    .md\:mt-72px {
-        @media (min-width: 768px) {
-            margin-top: clampCalc(72, 0);
-        }
-    }
+
     .mt-120px {
         margin-top: clampCalc(120, 0);
     }
@@ -113,51 +85,14 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
             padding: clampCalc(32, 0);
         }
     }
-    .px-36px {
-        padding-left: clampCalc(36, 0);
-        padding-right: clampCalc(36, 0);
-    }
-    .py-60px {
-        padding-top: clampCalc(60, 0);
-        padding-bottom: clampCalc(60, 0);
-    }
-    .py-50px {
-        padding-top: clampCalc(50, 0);
-        padding-bottom: clampCalc(50, 0);
-    }
+
     .px-70px {
         padding-left: clampCalc(70, 0);
         padding-right: clampCalc(70, 0);
     }
-    .w-100 {
-        width: 100%;
-    }
-    .rounded {
-        border-radius: clampCalc(10, 4);
-    }
-    .block {
-        display: block;
-    }
-    .d-none {
-        display: none;
-    }
+
     .flex {
         display: flex;
-    }
-    .sm\:block {
-        @media (min-width: 640px) {
-            display: block;
-        }
-    }
-    .md\:block {
-        @media (min-width: 768px) {
-            display: block;
-        }
-    }
-    .md\:d-none {
-        @media (min-width: 768px) {
-            display: none;
-        }
     }
     .flex-col {
         flex-direction: column;
@@ -174,41 +109,6 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
     }
     .items-center {
         align-items: center;
-    }
-    .items-start {
-        align-items: flex-start;
-    }
-    .justify-center {
-        justify-content: center;
-    }
-    .justify-between {
-        justify-content: space-between;
-    }
-    .md\:flex {
-        @media (min-width: 768px) {
-            display: flex;
-        }
-    }
-    .sm\:items-center {
-        @media (min-width: 640) {
-            align-items: center;
-        }
-    }
-    .md\:items-center {
-        @media (min-width: 768px) {
-            align-items: center;
-        }
-    }
-    .md\:justify-center {
-        @media (min-width: 768px) {
-            justify-content: center;
-        }
-    }
-    .basis-1\/2 {
-        flex-basis: 50%;
-    }
-    .gap-4 {
-        gap: 1rem;
     }
     .center {
         display: flex;
