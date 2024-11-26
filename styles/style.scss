@@ -1,0 +1,373 @@
+@use "sass:math";
+@use "sass:list";
+
+@function clampCalc($max, $min) {
+    $val: #{math.div($max, 12.8)}vw;
+    @if ($max > 0) {
+        @return clamp(#{$min}px, $val, #{$max}px);
+    } @else {
+        @return clamp(#{$max}px, $val, #{$min}px);
+    }
+}
+
+$primary-color: #00b65d;
+$primary-color-dark: #004e31;
+$background-color: #e9e9e9;
+$Noto-Sans-TC: "Noto Sans TC", sans-serif;
+
+#green-tea-history {
+    line-height: initial;
+    font-family: $Noto-Sans-TC;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: $background-color;
+    .fs-75px {
+        font-size: clampCalc(75, 24);
+    }
+    .fs-40px {
+        line-height: 1.575;
+        font-size: clampCalc(40, 20);
+    }
+    .fs-34px {
+        font-size: clampCalc(34, 16);
+    }
+    .fs-20px {
+        font-size: clampCalc(20, 14);
+    }
+    .fs-18px {
+        font-size: clampCalc(18, 14);
+    }
+    .leading-2\.5 {
+        line-height: 2.5;
+    }
+    .leading-2 {
+        line-height: 2;
+    }
+    .tracking-0\.3 {
+        letter-spacing: 0.3em;
+    }
+    .fw-medium {
+        font-weight: 500;
+    }
+    .fw-bold {
+        font-weight: 700;
+    }
+    .fw-heavy {
+        font-weight: 900;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .text-white {
+        color: #fff;
+    }
+    .text-green {
+        color: $primary-color;
+    }
+    .text-dark-green {
+        color: $primary-color-dark;
+    }
+    .text-gray {
+        color: #5d5d5d;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .m-auto {
+        margin: auto;
+    }
+    .mt-auto {
+        margin-top: auto;
+    }
+    .mt-20px {
+        margin-top: clampCalc(20, 0);
+    }
+    .mt-36px {
+        margin-top: clampCalc(36, 0);
+    }
+    .mt-48px {
+        margin-top: clampCalc(48, 0);
+    }
+    .mt-52px {
+        margin-top: clampCalc(52, 0);
+    }
+    .mt-64px {
+        margin-top: clampCalc(64, 0);
+    }
+    .mt-72px {
+        margin-top: clampCalc(72, 0);
+    }
+    .md\:mt-72px {
+        @media (min-width: 768px) {
+            margin-top: clampCalc(72, 0);
+        }
+    }
+    .mt-120px {
+        margin-top: clampCalc(120, 0);
+    }
+    .p-0 {
+        padding: 0;
+    }
+    .md\:p-32px {
+        @media (min-width: 768px) {
+            padding: clampCalc(32, 0);
+        }
+    }
+    .px-36px {
+        padding-left: clampCalc(36, 0);
+        padding-right: clampCalc(36, 0);
+    }
+    .py-60px {
+        padding-top: clampCalc(60, 0);
+        padding-bottom: clampCalc(60, 0);
+    }
+    .py-50px {
+        padding-top: clampCalc(50, 0);
+        padding-bottom: clampCalc(50, 0);
+    }
+    .px-70px {
+        padding-left: clampCalc(70, 0);
+        padding-right: clampCalc(70, 0);
+    }
+    .w-100 {
+        width: 100%;
+    }
+    .rounded {
+        border-radius: clampCalc(10, 4);
+    }
+    .block {
+        display: block;
+    }
+    .d-none {
+        display: none;
+    }
+    .flex {
+        display: flex;
+    }
+    .sm\:block {
+        @media (min-width: 640px) {
+            display: block;
+        }
+    }
+    .md\:block {
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+    .md\:d-none {
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    .flex-col {
+        flex-direction: column;
+    }
+    .sm\:flex-row {
+        @media (min-width: 640px) {
+            flex-direction: row;
+        }
+    }
+    .md\:flex-row {
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+    .items-center {
+        align-items: center;
+    }
+    .items-start {
+        align-items: flex-start;
+    }
+    .justify-center {
+        justify-content: center;
+    }
+    .justify-between {
+        justify-content: space-between;
+    }
+    .md\:flex {
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+    .sm\:items-center {
+        @media (min-width: 640) {
+            align-items: center;
+        }
+    }
+    .md\:items-center {
+        @media (min-width: 768px) {
+            align-items: center;
+        }
+    }
+    .md\:justify-center {
+        @media (min-width: 768px) {
+            justify-content: center;
+        }
+    }
+    .basis-1\/2 {
+        flex-basis: 50%;
+    }
+    .gap-4 {
+        gap: 1rem;
+    }
+    .center {
+        display: flex;
+        > * {
+            margin: auto;
+        }
+    }
+    .header {
+        display: flex;
+        background-image: url("../assets/header-bg.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        padding: 5.46875vw;
+        height: 100dvh;
+        p {
+            text-shadow: 2px 3px 4px rgba(16, 16, 16, 0.5);
+        }
+    }
+    .origin {
+        .center > div {
+            max-width: 1138px;
+        }
+        .pic-grid img {
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            .pic-grid img {
+                width: clampCalc(664, 0);
+            }
+        }
+    }
+    .product {
+        .flex {
+            max-width: 1138px;
+            gap: 8px;
+            align-items: stretch;
+        }
+        .text {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: clampCalc(43, 0);
+            background-image: url("../assets/green-tea-bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media (min-width: 640px) {
+                width: clampCalc(454, 0);
+            }
+            img {
+                width: 75%;
+                @media (min-width: 640px) {
+                    width: 100%;
+                }
+            }
+        }
+        .swiper {
+            width: 89.0625vw;
+            @media (min-width: 640px) {
+                width: clampCalc(674, 0);
+            }
+            .swiper-wrapper {
+                display: flex;
+                align-items: stretch;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .lab {
+        p.fs-20px br {
+            display: none;
+            @media (min-width: 640px) {
+                display: block;
+            }
+        }
+        .flex {
+            width: 89.0625vw;
+            max-width: 1138px;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: #fff;
+            img:nth-of-type(1) {
+                width: clampCalc(216, 0);
+            }
+            img:nth-of-type(2) {
+                width: clampCalc(116, 0);
+            }
+            img:nth-of-type(3) {
+                width: clampCalc(130, 0);
+            }
+            img:nth-of-type(4) {
+                width: clampCalc(110, 0);
+            }
+        }
+    }
+    .learn-more {
+        > p {
+            width: 89.0625vw;
+            max-width: 1138px;
+        }
+        .swiper-p {
+            width: 89.0625vw;
+            max-width: 1138px;
+
+            .swiper-slide {
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin-top: 1em;
+                }
+                a {
+                    color: #929292;
+                    margin-top: 0.8em;
+                }
+            }
+        }
+    }
+    .more {
+        padding-bottom: clampCalc(36, 0);
+        > p {
+            margin-top: clampCalc(72, 0);
+            margin-bottom: clampCalc(36, 0);
+        }
+        .flex {
+            gap: 4px;
+            justify-content: center;
+            .href:first-of-type {
+                background-image: url("../assets/about-us.png");
+            }
+            .href:last-of-type {
+                background-image: url("../assets/better-for-earth.png");
+            }
+        }
+        .href {
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: clampCalc(567, 0);
+            height: clampCalc(178, 0);
+            display: flex;
+            align-items: center;
+            padding-left: 1.5%;
+            a {
+                span:last-of-type {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    img {
+                        margin-top: 1%;
+                        max-width: 28px;
+                        width: 2.1875vw;
+                    }
+                }
+            }
+        }
+    }
+}
