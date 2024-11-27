@@ -42,6 +42,9 @@
 #green-tea-history .text-center {
   text-align: center;
 }
+#green-tea-history .mt-auto {
+  margin-top: auto;
+}
 #green-tea-history .mt-36px {
   margin-top: clamp(0px, 2.8125vw, 36px);
 }

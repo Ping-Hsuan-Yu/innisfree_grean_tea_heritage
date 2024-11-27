@@ -60,7 +60,9 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
     .text-center {
         text-align: center;
     }
-
+    .mt-auto {
+        margin-top: auto;
+    }
     .mt-36px {
         margin-top: clampCalc(36, 0);
     }
@@ -85,12 +87,10 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
             padding: clampCalc(32, 0);
         }
     }
-
     .px-70px {
         padding-left: clampCalc(70, 0);
         padding-right: clampCalc(70, 0);
     }
-
     .flex {
         display: flex;
     }
