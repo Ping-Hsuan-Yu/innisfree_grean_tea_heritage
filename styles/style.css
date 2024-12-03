@@ -120,6 +120,9 @@
     width: clamp(0px, 51.875vw, 664px);
   }
 }
+#green-tea-history .product > div {
+  position: relative;
+}
 #green-tea-history .product .flex {
   max-width: 1138px;
   gap: 8px;
@@ -166,6 +169,31 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+#green-tea-history .product .green-tea-pagination.swiper-pagination-bullets {
+  position: absolute;
+  --swiper-pagination-bottom: -20px;
+  right: 0;
+  left: initial;
+  width: 89.0625vw;
+}
+@media (min-width: 640px) {
+  #green-tea-history .product .green-tea-pagination.swiper-pagination-bullets {
+    width: clamp(0px, 52.65625vw, 674px);
+  }
+}
+#green-tea-history .product .green-tea-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  --swiper-pagination-bullet-width: 16.666%;
+  --swiper-pagination-bullet-height: 2px;
+  --swiper-pagination-bullet-border-radius: 0;
+  --swiper-pagination-bullet-inactive-color: #929292;
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+  --swiper-pagination-bullet-horizontal-gap:0;
+}
+#green-tea-history .product .green-tea-pagination.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  --swiper-pagination-bullet-width: 16.666%;
+  --swiper-pagination-bullet-height: 2px;
+  --swiper-pagination-color: #929292;
+}
 #green-tea-history .lab p.fs-20px br {
   display: none;
 }
@@ -210,6 +238,19 @@
 #green-tea-history .learn-more .swiper-p .swiper-slide a {
   color: #929292;
   margin-top: 0.8em;
+}
+#green-tea-history .learn-more .swiper-p .swiper-pagination-bullets .swiper-pagination-bullet {
+  --swiper-pagination-bullet-width: 20%;
+  --swiper-pagination-bullet-height: 2px;
+  --swiper-pagination-bullet-border-radius: 0;
+  --swiper-pagination-bullet-inactive-color: #929292;
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+  --swiper-pagination-bullet-horizontal-gap:0;
+}
+#green-tea-history .learn-more .swiper-p .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  --swiper-pagination-bullet-width: 20%;
+  --swiper-pagination-bullet-height: 2px;
+  --swiper-pagination-color: #929292;
 }
 #green-tea-history .more {
   padding-bottom: clamp(0px, 2.8125vw, 36px);

@@ -142,6 +142,9 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
         }
     }
     .product {
+        > div {
+            position: relative;
+        }
         .flex {
             max-width: 1138px;
             gap: 8px;
@@ -179,6 +182,29 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+        }
+        .green-tea-pagination.swiper-pagination-bullets {
+            position: absolute;
+            --swiper-pagination-bottom: -20px;
+            right: 0;
+            left: initial;
+            width: 89.0625vw;
+            @media (min-width: 640px) {
+                width: clampCalc(674, 0);
+            }
+            .swiper-pagination-bullet {
+                --swiper-pagination-bullet-width: 16.666%;
+                --swiper-pagination-bullet-height: 2px;
+                --swiper-pagination-bullet-border-radius: 0;
+                --swiper-pagination-bullet-inactive-color: #929292;
+                --swiper-pagination-bullet-inactive-opacity: 0.3;
+                --swiper-pagination-bullet-horizontal-gap:0;
+            }
+            .swiper-pagination-bullet-active {
+                --swiper-pagination-bullet-width: 16.666%;
+                --swiper-pagination-bullet-height: 2px;
+                --swiper-pagination-color: #929292;
             }
         }
     }
@@ -228,6 +254,21 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
                 a {
                     color: #929292;
                     margin-top: 0.8em;
+                }
+            }
+            .swiper-pagination-bullets { 
+                .swiper-pagination-bullet {
+                    --swiper-pagination-bullet-width: 20%;
+                    --swiper-pagination-bullet-height: 2px;
+                    --swiper-pagination-bullet-border-radius: 0;
+                    --swiper-pagination-bullet-inactive-color: #929292;
+                    --swiper-pagination-bullet-inactive-opacity: 0.3;
+                    --swiper-pagination-bullet-horizontal-gap:0;
+                }
+                .swiper-pagination-bullet-active {
+                    --swiper-pagination-bullet-width: 20%;
+                    --swiper-pagination-bullet-height: 2px;
+                    --swiper-pagination-color: #929292;
                 }
             }
         }

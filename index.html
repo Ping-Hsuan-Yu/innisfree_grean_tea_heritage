@@ -97,6 +97,7 @@
               </div>
             </div>
           </div>
+          <div class="green-tea-pagination"></div>
         </div>
       </section>
       <section class="lab px-70px center">
@@ -180,6 +181,7 @@
                 >
               </div>
             </div>
+            <div class="product-pagination"></div>
           </div>
         </div>
       </section>
@@ -189,7 +191,7 @@
         </p>
         <div class="flex fw-heavy">
           <div class="href">
-            <a href="" target="_blank">
+            <a href="https://www.innisfree.com.tw/about?id=brand_inni" target="_blank">
               <span class="fs-34px text-white">About us</span><br />
               <span>
                 <span class="fs-20px fw-medium text-white">品牌故事</span>
@@ -198,7 +200,7 @@
             </a>
           </div>
           <div class="href">
-            <a href="" target="_blank">
+            <a href="https://www.innisfree.com.tw/about?id=campaign_gfc" target="_blank">
               <span class="fs-34px text-white">Better for Earth</span><br />
               <span>
                 <span class="fs-20px fw-medium text-white">品牌關懷</span>
@@ -215,13 +217,26 @@
     const swiper = new Swiper(".swiper-g", {
       slidesPerView: 3,
       spaceBetween: 8,
-      loop:true,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".green-tea-pagination",
+      },
     });
     const swiperP = new Swiper(".swiper-p", {
       slidesPerView: 4,
       spaceBetween: 8,
-      loop:true,
-
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".product-pagination",
+      },
     });
   </script>
 </html>
