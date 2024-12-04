@@ -99,9 +99,9 @@
 }
 #green-tea-history .header {
   display: flex;
-  background-image: url("../assets/header-bg.png");
+  background-image: url("../assets/header-bg.webp");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
   background-size: cover;
   padding: 5.46875vw;
   height: 100dvh;
@@ -134,7 +134,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: clamp(0px, 3.359375vw, 43px);
-  background-image: url("../assets/green-tea-bg.png");
+  background-image: url("../assets/green-tea-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -264,10 +264,10 @@
   justify-content: center;
 }
 #green-tea-history .more .flex .href:first-of-type {
-  background-image: url("../assets/about-us.png");
+  background-image: url("../assets/about-us.webp");
 }
 #green-tea-history .more .flex .href:last-of-type {
-  background-image: url("../assets/better-for-earth.png");
+  background-image: url("../assets/better-for-earth.webp");
 }
 #green-tea-history .more .href {
   background-repeat: no-repeat;

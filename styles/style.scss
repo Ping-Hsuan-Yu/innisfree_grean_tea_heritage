@@ -118,9 +118,9 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
     }
     .header {
         display: flex;
-        background-image: url("../assets/header-bg.png");
+        background-image: url("../assets/header-bg.webp");
         background-repeat: no-repeat;
-        background-position: top center;
+        background-position: bottom center;
         background-size: cover;
         padding: 5.46875vw;
         height: 100dvh;
@@ -156,7 +156,7 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
             flex-direction: column;
             justify-content: flex-end;
             padding: clampCalc(43, 0);
-            background-image: url("../assets/green-tea-bg.png");
+            background-image: url("../assets/green-tea-bg.webp");
             background-repeat: no-repeat;
             background-size: cover;
             @media (min-width: 640px) {
@@ -283,10 +283,10 @@ $Noto-Sans-TC: "Noto Sans TC", sans-serif;
             gap: 4px;
             justify-content: center;
             .href:first-of-type {
-                background-image: url("../assets/about-us.png");
+                background-image: url("../assets/about-us.webp");
             }
             .href:last-of-type {
-                background-image: url("../assets/better-for-earth.png");
+                background-image: url("../assets/better-for-earth.webp");
             }
         }
         .href {
